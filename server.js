@@ -6,6 +6,10 @@ app.get("/", function(req, res){
 	// res.send("Hello Iam Vinay  ");
 	res.sendFile(__dirname+"/index.html")
 });
+app.get("/newpage", function(req, res){
+	// res.send("Hello Iam Vinay  ");
+	res.sendFile(__dirname+"/newpage.html")
+});
 
 app.listen(port, function(){
 	console.log("Server running on http://localhost:"+port);
